@@ -4,9 +4,12 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 #define DHTPIN 2
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
-void setup(){
-}
-void loop(){
+
+
+void setup(){ }
+
+void loop()
+{
   float humi = dht.readHumidity(0);
   float tempC = dht.readTemperature();
   Serial.print("humidity: ");
