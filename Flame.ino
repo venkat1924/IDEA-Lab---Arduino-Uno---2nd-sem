@@ -1,11 +1,14 @@
 int Buzzer = 13;
 int FlamePin = 2;
 int Flame = HIGH;
-void setup(){
+
+void setup()
+{
   pinMode(Buzzer, OUTPUT);
   pinMode(FlamePin, INPUT);
   Serial.begin(9600);
 }
+
 void loop(){
   Flame = digitalRead(FlamePin);
   if(Flame == HIGH){
