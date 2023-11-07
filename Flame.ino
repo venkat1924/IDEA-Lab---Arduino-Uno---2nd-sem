@@ -4,9 +4,10 @@ int Flame = HIGH;
 
 void setup()
 {
+  Serial.begin(9600);
   pinMode(Buzzer, OUTPUT);
   pinMode(FlamePin, INPUT);
-  Serial.begin(9600);
+ 
 }
 
 void loop()
