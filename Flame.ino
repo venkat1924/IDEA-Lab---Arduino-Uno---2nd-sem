@@ -9,7 +9,8 @@ void setup()
   Serial.begin(9600);
 }
 
-void loop(){
+void loop()
+{
   Flame = digitalRead(FlamePin);
   if(Flame == HIGH){
     Serial.print("HIGH FLAME");
