@@ -6,8 +6,7 @@ void setup()
 {
   Serial.begin(9600);
   pinMode(Buzzer, OUTPUT);
-  pinMode(FlamePin, INPUT);
- 
+  pinMode(FlamePin, INPUT); 
 }
 
 void loop()
