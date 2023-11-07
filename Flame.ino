@@ -17,7 +17,8 @@ void loop()
     Serial.print("HIGH FLAME");
     digitalWrite(Buzzer, HIGH);
   }
-  else{
+  else
+  {
     Serial.println("NO FLAME");
     digitalWrite(Buzzer, LOW);
   }
