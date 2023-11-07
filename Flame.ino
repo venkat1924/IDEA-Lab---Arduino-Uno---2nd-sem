@@ -12,7 +12,8 @@ void setup()
 void loop()
 {
   Flame = digitalRead(FlamePin);
-  if(Flame == HIGH){
+  if(Flame == HIGH)
+  {
     Serial.print("HIGH FLAME");
     digitalWrite(Buzzer, HIGH);
   }else{
