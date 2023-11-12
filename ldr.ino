@@ -12,6 +12,7 @@ void setup()
 void loop()
 {
   ldrstatus=analogRead(ldrpin);
+
   if (ldrstatus <=200)
   {
     digitalWrite(ledpin, LOW);
@@ -24,3 +25,4 @@ void loop()
     Serial.print("It's DARK, turn on the LED");
     Serial.println(ldrstatus);
   }
+}
