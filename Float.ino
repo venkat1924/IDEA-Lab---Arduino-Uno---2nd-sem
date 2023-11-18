@@ -10,7 +10,8 @@ void setup()
   pinMode(led, OUTPUT);
 }
 
-void loop(){
+void loop()
+{
   buttonState = digitalRead(FloatSensor);
   if(buttonState == HIGH){
     digitalWrite(led, LOW);
